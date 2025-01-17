@@ -17,13 +17,13 @@ The Long Dark Modding Server (Discord)
 ## Extra Special Thanks
 I would not have been able to create this mod, if I could not utilize some code from one of Fuar's mods.  Thanks Fuar!  
 
-# 
-
 ##
-
 Install MelonLoader by downloading and running MelonLoader.Installer.exe
+##
 Install the following dependencies in your mods folder:
+##
 ModSettings
+##
 Download the latest release and extracts all contents to your Mods folder.
 
 #### Buy Me a Coffee
