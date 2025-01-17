@@ -21,6 +21,6 @@ I would not have been able to create this mod, if I could not utilize some code 
 ModSettings is required.
 
 
-#### Buy Me a Coffee
+## Buy Me a Coffee
 If you enjoy using this mod, feel free to buy me a cup of coffee.  Thank you!
 https://ko-fi.com/moosemeat817
