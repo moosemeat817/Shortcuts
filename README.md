@@ -4,7 +4,7 @@ This is a mod for The Long Dark by Hinterland Studio, Inc.
 ## Description
 Adds a variety of shortcuts to some regions.
 
-<img src="https://github.com/moosemeat817/images/blob/main/ShortcutsMenu.png" width="80%">
+<img src="https://github.com/moosemeat817/images/blob/main/Shortcuts_Menu.png" width="80%">
 
 
 ## Usage
