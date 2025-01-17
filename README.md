@@ -17,9 +17,6 @@ The Long Dark Modding Server (Discord)
 ## Extra Special Thanks
 I would not have been able to create this mod, if I could not utilize some code from one of Fuar's mods.  Thanks Fuar!  
 
-##
-ModSettings is required.
-
 
 ## Buy Me a Coffee
 If you enjoy using this mod, feel free to buy me a cup of coffee.  Thank you!
