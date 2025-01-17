@@ -15,7 +15,7 @@ Enable individual shortcuts in Mod Settings.
 The Long Dark Modding Server (Discord)
 
 # Extra Special Thanks
-This mod would not be possible, if I wasn't able to use code from one of Fuar's mods! 
+I would not have been able to create this mod, if I could not utilize some code from one of Fuar's mods.  Thanks Fuar!  
 
 # 
 
