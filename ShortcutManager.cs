@@ -41,6 +41,21 @@ namespace Shortcuts
             }
 
 
+            if (scene == "HubRegion" && Settings.options.forsakenShort)
+            {
+
+                // Forsaken Log Bridge
+                GameObject logBridge = GameObject.Find("OBJ_LogBridgeA_Prefab");
+
+                Vector3 position = new Vector3(-283.0278f, 318.4634f, 150.2178f);
+                Vector3 rotation = new Vector3(0.0f, 202.2307f, 216.1678f);
+                Vector3 scale = new Vector3(1, 1, 1);
+
+                SceneUtils.InstantiateObjectInScene(logBridge, position, rotation, scale);
+
+            }
+
+
 
             if (scene == "RiverValleyRegion" && Settings.options.hushedBridge1)
             {

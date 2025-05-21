@@ -56,7 +56,11 @@ namespace Shortcuts
         [Name("HRV - Valley View Point Fallen Tree")]
         [Description("Fallen tree across river")]
         public bool hushedBridge2 = false;
-   
+
+        [Name("Ravine Bridge")]
+        [Description("Skip the bridge in the Ravine")]
+        public bool ravinebridgeSkip = false;
+
         [Name("Sundered Pass Broken Bridge Plank")]
         [Description("Add a plank to the broken bridge")]
         public bool sunderedPlank = false;

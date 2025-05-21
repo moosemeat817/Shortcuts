@@ -70,6 +70,14 @@ namespace Shortcuts
             }
 
 
+            if (sceneName == "RavineTransitionZone" && Settings.options.ravinebridgeSkip)
+            {
+
+                GameObject.Find("Design/Scripting/Transitions/CoastalRegion/TransitionZone").transform.SetPositionAndRotation(new Vector3(-350.77f, 136.18f, 11.42f), Quaternion.Euler(new Vector3(-0, 180, 0)));
+                GameObject.Find("Design/Scripting/Transitions/CoastalRegion/TransitionContact").transform.SetPositionAndRotation(new Vector3(-350.77f, 136.18f, 11.42f), Quaternion.Euler(new Vector3(-0, 180, 0)));
+                GameObject.Find("Design/Scripting/Transitions/CoastalRegion/CoastalRegionExitPoint").transform.SetPositionAndRotation(new Vector3(-359.63f, 136.50f, 7.67f), Quaternion.Euler(new Vector3(-0, 230, 0)));
+
+            }
 
 
 
@@ -102,7 +110,13 @@ namespace Shortcuts
             {
                 new ShortcutManager().PlaceAssets();
             }
-            
+
+
+            if (sceneName == "LongRailTransitionZone")
+            {
+                Clones.ChangeObjects();
+            }
+
         }
 
     }
