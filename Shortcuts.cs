@@ -59,6 +59,9 @@ namespace Shortcuts
                 GameObject.Find("Design/Transitions/TracksRegion/TracksExitPoint").transform.SetPositionAndRotation(new Vector3(-178.7009f, 4.3f, 1237.159f), Quaternion.Euler(new Vector3(-0, 180, 0)));
                 GameObject.Find("Design/Transitions/HubRegion/HubExitPoint").transform.SetPositionAndRotation(new Vector3(92.0381f, 4.3f, -578.91f), Quaternion.Euler(new Vector3(-0, 180, 0)));
 
+                GameObject.Find("Design/Transitions/HubRegion/TransitionContact").gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
+                GameObject.Find("Design/Transitions/TracksRegion/TransitionContact").gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
+
             }
 
             if (sceneName == "MarshRegion_SANDBOX" && Settings.options.muskegIce)
