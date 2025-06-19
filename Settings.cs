@@ -5,10 +5,6 @@ namespace Shortcuts
     internal class Shortcuts : JsonModSettings
     {
 
-        [Name("Ash Canyon Rope")]
-        [Description("Enable rope near the fishing cabin")]
-        public bool ashCanyonRope = false;
-
         [Name("Blackrock Prison Fence")]
         [Description("Remove one section of the prison gate between the infirmary and barracks")]
         public bool prisonGate = false;

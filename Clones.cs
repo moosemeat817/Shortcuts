@@ -16,6 +16,8 @@ namespace Shortcuts
             {"0_Scene",              "1_Name"},
             {"LongRailTransitionZone",  "OBJ_LogBridgeA_Prefab"},
 
+            {"AshCanyonRegion",  "OBJ_LogBridgeA_Prefab"},
+
 
 
         };
@@ -75,6 +77,30 @@ namespace Shortcuts
                         }
                         // ------------------------------------------------------------------------------------------
                        
+
+                    }
+
+                    // ==============================================================================================================
+                    // Ash Canyon
+                    // ==============================================================================================================
+
+                    if (itemDataArray[i, 0] == "AshCanyonRegion")
+                    {
+
+                        // Roof ------------------------------------------------------------------------------------------
+                        if (itemDataArray[i, 1] == "OBJ_LogBridgeA_Prefab" && !GameObject.Find("OBJ_LogBridgeA_Prefab(Clone)"))
+                        {
+                            GameObject cloneObject = Instantiate(
+                                findTargetGO,
+                                new Vector3(-2.92f, 6.9236f, 94.273f),
+                                Quaternion.Euler(7.6338f, 61.4907f, 331.7526f)
+                            );
+                            cloneObject.transform.localScale = new Vector3(1f, 0.8f, 1.2f);
+
+
+                        }
+                        // ------------------------------------------------------------------------------------------
+
 
                     }
 

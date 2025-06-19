@@ -23,13 +23,7 @@ namespace Shortcuts
 
             }
 
-            if (sceneName == "AshCanyonRegion_EastRidge" && Settings.options.ashCanyonRope)
-            {
-
-                GameObject.Find("Root/Art/GrayBlack/INTERACTIVE_RopeCliff_08_50m (2)/Rope_50m").gameObject.SetActive(true);           
-
-            }
-
+                  
             if (sceneName == "CanneryRegion" && Settings.options.bleakRope)
             {
 
@@ -58,9 +52,6 @@ namespace Shortcuts
 
                 GameObject.Find("Design/Transitions/TracksRegion/TracksExitPoint").transform.SetPositionAndRotation(new Vector3(-178.7009f, 4.3f, 1237.159f), Quaternion.Euler(new Vector3(-0, 180, 0)));
                 GameObject.Find("Design/Transitions/HubRegion/HubExitPoint").transform.SetPositionAndRotation(new Vector3(92.0381f, 4.3f, -578.91f), Quaternion.Euler(new Vector3(-0, 180, 0)));
-
-                GameObject.Find("Design/Transitions/HubRegion/TransitionContact").gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
-                GameObject.Find("Design/Transitions/TracksRegion/TransitionContact").gameObject.transform.localScale = new Vector3(5f, 5f, 5f);
 
             }
 
@@ -104,7 +95,7 @@ namespace Shortcuts
                 GameObject.Find("Design/Transitions/BrokenWindow/DamWindowEnterPoint").transform.SetPositionAndRotation(new Vector3(-74.5062f, -5.236f, -15.3471f), Quaternion.Euler(new Vector3(-0, 0, 0)));
             }
 
-            if (sceneName == "AirfieldRegion" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion")
+            if (sceneName == "AshCanyonRegion" || sceneName == "AirfieldRegion" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion")
             {
                 new ShortcutManager().PlaceTerrain();
             }
@@ -119,7 +110,7 @@ namespace Shortcuts
             {
                 Clones.ChangeObjects();
             }
-
+            
         }
 
     }
