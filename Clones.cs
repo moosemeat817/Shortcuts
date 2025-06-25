@@ -18,6 +18,9 @@ namespace Shortcuts
 
             {"AshCanyonRegion",  "OBJ_LogBridgeA_Prefab"},
 
+            {"BlackrockTransitionZone",  "TRN_CaveD_InnerBigL_Prefab"},
+            {"BlackrockTransitionZone",  "TRN_CaveD_InnerSmall_Prefab"},
+
 
 
         };
@@ -60,7 +63,7 @@ namespace Shortcuts
                     // Long Rail Transition Zone 
                     // ==============================================================================================================
 
-                    if (itemDataArray[i, 0] == "LongRailTransitionZone")
+                    if (itemDataArray[i, 0] == "LongRailTransitionZone" && Settings.options.branchlineSkip)
                     {
 
                         // Roof ------------------------------------------------------------------------------------------
@@ -84,6 +87,7 @@ namespace Shortcuts
                     // Ash Canyon
                     // ==============================================================================================================
 
+                    /*
                     if (itemDataArray[i, 0] == "AshCanyonRegion")
                     {
 
@@ -96,6 +100,32 @@ namespace Shortcuts
                                 Quaternion.Euler(7.6338f, 61.4907f, 331.7526f)
                             );
                             cloneObject.transform.localScale = new Vector3(1f, 0.8f, 1.2f);
+
+
+                        }
+                        // ------------------------------------------------------------------------------------------
+
+
+                    }
+                    */
+
+                    // ==============================================================================================================
+                    // Ash Canyon
+                    // ==============================================================================================================
+
+                    if (itemDataArray[i, 0] == "BlackrockTransitionZone" && Settings.options.keepersNorth)
+                    {
+
+                        
+                        // Roof ------------------------------------------------------------------------------------------
+                        if (itemDataArray[i, 1] == "TRN_CaveD_InnerBigL_Prefab" && !GameObject.Find("TRN_CaveD_InnerBigL_Prefab(Clone)"))
+                        {
+                            GameObject cloneObject = Instantiate(
+                                findTargetGO,
+                                new Vector3(845.0787f, 230.1365f, -20.8914f),
+                                Quaternion.Euler(-0, 195.2845f, 355.7997f)
+                            );
+                            cloneObject.transform.localScale = new Vector3(1.1f, 1f, .6f);
 
 
                         }

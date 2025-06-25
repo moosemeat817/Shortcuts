@@ -53,6 +53,10 @@ namespace Shortcuts
         [Description("Fallen tree across river")]
         public bool hushedBridge2 = false;
 
+        [Name("Keeper's Pass North")]
+        [Description("Move cave transition from Keeper's Pass South to bypass the long, uneventful winding path")]
+        public bool keepersNorth = false;
+
         [Name("Ravine Bridge")]
         [Description("Skip the bridge in the Ravine")]
         public bool ravinebridgeSkip = false;

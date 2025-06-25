@@ -74,6 +74,16 @@ namespace Shortcuts
             }
 
 
+            if (sceneName == "BlackrockTransitionZone" && Settings.options.keepersNorth)
+            {
+
+                GameObject.Find("Design/Transitions/CanyonCaveTransition/TransitionZone").transform.SetPositionAndRotation(new Vector3(844.41f, 232.34f, -21.10f), Quaternion.Euler(new Vector3(-0, 0, 0)));
+                GameObject.Find("Design/Transitions/CanyonCaveTransition/TransitionContact").transform.SetPositionAndRotation(new Vector3(846.50f, 233.09f, -13.41f), Quaternion.Euler(new Vector3(-0, 0, 0)));
+                GameObject.Find("Design/Transitions/CanyonCaveTransition/CanyonCave_ExitPoint2").transform.SetPositionAndRotation(new Vector3(841.22f, 231.71f, -34.38f), Quaternion.Euler(new Vector3(-0, 180, 0)));
+
+            }
+
+
 
         }
 
@@ -95,7 +105,7 @@ namespace Shortcuts
                 GameObject.Find("Design/Transitions/BrokenWindow/DamWindowEnterPoint").transform.SetPositionAndRotation(new Vector3(-74.5062f, -5.236f, -15.3471f), Quaternion.Euler(new Vector3(-0, 0, 0)));
             }
 
-            if (sceneName == "AshCanyonRegion" || sceneName == "AirfieldRegion" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion")
+            if (sceneName == "AshCanyonRegion" || sceneName == "AirfieldRegion" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion" || sceneName == "BlackrockTransitionZone")
             {
                 new ShortcutManager().PlaceTerrain();
             }
@@ -106,7 +116,7 @@ namespace Shortcuts
             }
 
 
-            if (sceneName == "LongRailTransitionZone")
+            if (sceneName == "LongRailTransitionZone" || sceneName == "BlackrockTransitionZone")
             {
                 Clones.ChangeObjects();
             }

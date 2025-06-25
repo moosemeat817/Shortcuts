@@ -139,6 +139,21 @@ namespace Shortcuts
 
             }
 
+
+            if (scene == "BlackrockTransitionZone" && Settings.options.keepersNorth)
+            {
+
+                // BRoken Railroad Log Bridge
+                GameObject rockFiller = GameObject.Find("TRN_RockCliff_09_Big_A_HS_Prefab (2)");
+
+                Vector3 position = new Vector3(845.3787f, 263.5678f, 8.6656f);
+                Vector3 rotation = new Vector3(358.1999f, 178.8229f, 0f);
+                Vector3 scale = new Vector3(1.3f, 0.7f, 1f);
+
+                SceneUtils.InstantiateObjectInScene(rockFiller, position, rotation, scale);
+
+            }
+
         }
 
 
