@@ -65,6 +65,10 @@ namespace Shortcuts
         [Description("Add a plank to the broken bridge")]
         public bool sunderedPlank = false;
 
+        [Name("Transfer Pass - Path to SP")]
+        [Description("Shorten the path within Transfer Pass that leads to Sundered Pass")]
+        public bool hubToSundered = false;
+
         [Name("Timberwolf Mountain Rope")]
         [Description("Enable rope at the top of the creek")]
         public bool timberwolfRope = false;

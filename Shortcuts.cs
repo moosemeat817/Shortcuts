@@ -84,6 +84,16 @@ namespace Shortcuts
             }
 
 
+            if (sceneName == "HubRegion" && Settings.options.hubToSundered)
+            {
+
+                GameObject.Find("Design/Transitions/Pass/TransitionZone").transform.SetPositionAndRotation(new Vector3(-199.25f, 396.71f, 691.83f), Quaternion.Euler(new Vector3(-0, 0, 0)));
+                GameObject.Find("Design/Transitions/Pass/TransitionContact").transform.SetPositionAndRotation(new Vector3(-199.25f, 396.71f, 691.83f), Quaternion.Euler(new Vector3(-0, 0, 0)));
+                GameObject.Find("Design/Transitions/Pass/PassExitPoint").transform.SetPositionAndRotation(new Vector3(-192.60f, 398.04f, 685.84f), Quaternion.Euler(new Vector3(-0, 70, 0)));
+
+            }
+
+
 
         }
 
