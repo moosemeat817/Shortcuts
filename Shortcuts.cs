@@ -31,6 +31,13 @@ namespace Shortcuts
 
             }
 
+            if (sceneName == "CanneryRegion" && Settings.options.bleakDock)
+            {
+
+                GameObject.Find("Art/Ocean_Pier/OBJ_DockDeckBroken_A_Prefab (2)").gameObject.SetActive(false);
+
+            }
+
 
             if (sceneName == "BlackrockPrisonSurvivalZone" && Settings.options.prisonGate)
             {
@@ -115,7 +122,7 @@ namespace Shortcuts
                 GameObject.Find("Design/Transitions/BrokenWindow/DamWindowEnterPoint").transform.SetPositionAndRotation(new Vector3(-74.5062f, -5.236f, -15.3471f), Quaternion.Euler(new Vector3(-0, 0, 0)));
             }
 
-            if (sceneName == "AshCanyonRegion" || sceneName == "AirfieldRegion" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion" || sceneName == "BlackrockTransitionZone")
+            if (sceneName == "AshCanyonRegion" || sceneName == "AirfieldRegion" || sceneName == "LongRailTransitionZone" || sceneName == "MountainTownRegion" || sceneName == "RiverValleyRegion" || sceneName == "WhalingStationRegion" || sceneName == "TracksRegion" || sceneName == "BlackrockTransitionZone")
             {
                 new ShortcutManager().PlaceTerrain();
             }
@@ -126,7 +133,7 @@ namespace Shortcuts
             }
 
 
-            if (sceneName == "LongRailTransitionZone" || sceneName == "BlackrockTransitionZone")
+            if (sceneName == "LongRailTransitionZone" || sceneName == "BlackrockTransitionZone" || sceneName == "CanneryRegion")
             {
                 Clones.ChangeObjects();
             }

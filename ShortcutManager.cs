@@ -154,6 +154,20 @@ namespace Shortcuts
 
             }
 
+            if (scene == "LongRailTransitionZone" && Settings.options.branchlineTree)
+            {
+
+                // BRoken Railroad Log Bridge
+                GameObject logBridge = GameObject.Find("OBJ_LogBridgeA_Prefab");
+
+                Vector3 position = new Vector3(-4.1286f, 5.86f, 90.8928f);
+                Vector3 rotation = new Vector3(5.2229f, 72.4893f, 334.5515f);
+                Vector3 scale = new Vector3(1.2f, .9f, 1f);
+
+                SceneUtils.InstantiateObjectInScene(logBridge, position, rotation, scale);
+
+            }
+
         }
 
 
@@ -177,6 +191,7 @@ namespace Shortcuts
 
             }
 
+            /*
             else if (scene == "CanneryRegion" && Settings.options.bleakPlank)
             {
 
@@ -187,6 +202,7 @@ namespace Shortcuts
 
                 SceneUtils.PlaceAssetsInScene("OBJ_WoodPlankSingle", position2, rotation2, scale2);
             }
+            */
 
             else if (scene == "LongRailTransitionZone" && Settings.options.branchlineSkip)
             {

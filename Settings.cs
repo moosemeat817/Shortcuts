@@ -13,9 +13,9 @@ namespace Shortcuts
         [Description("Unlock the prison workshop door")]
         public bool prisonDoor = false;
 
-        [Name("Bleak Inlet Cannery Workshop Plank")]
-        [Description("Add a plank to the broken dock by the workshop")]
-        public bool bleakPlank = false;
+        [Name("Bleak Inlet Cannery Workshop Dock")]
+        [Description("Repair the dock that leads to the workshop")]
+        public bool bleakDock = false;
 
         [Name("Bleak Inlet Rope")]
         [Description("Enable rope near the lookout")]
@@ -31,7 +31,11 @@ namespace Shortcuts
 
         [Name("Far Range Branch Line Skip")]
         [Description("Skip the Far Range Branch Line and go directly from Broken Railroad to Transfer Pass (results in a double load screen)")]
-        public bool branchlineSkip = false;     
+        public bool branchlineSkip = false;
+
+        [Name("Far Range Branch Line Fallen Tree")]
+        [Description("Add a fallen tree by the rope climb")]
+        public bool branchlineTree = false;
 
         [Name("Forlorn Muskeg Shortcuts")]
         [Description("Disable the weak ice.  Shortcuts everywhere!")]
@@ -65,7 +69,7 @@ namespace Shortcuts
         [Description("Add a plank to the broken bridge")]
         public bool sunderedPlank = false;
 
-        [Name("Transfer Pass - Path to SP")]
+        [Name("Transfer Pass - Path to Sundered Pass")]
         [Description("Shorten the path within Transfer Pass that leads to Sundered Pass")]
         public bool hubToSundered = false;
 
@@ -77,20 +81,6 @@ namespace Shortcuts
         [Name("Winding River Dam Door!")]
         [Description("Make dam door open both ways")]
         public bool enableDamDoor = false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 
