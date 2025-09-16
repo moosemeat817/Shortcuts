@@ -17,6 +17,10 @@ namespace Shortcuts
         [Description("Repair the dock that leads to the workshop")]
         public bool bleakDock = false;
 
+        [Name("Bleak Inlet Cannery Ramps")]
+        [Description("Repair the dock that leads to the workshop")]
+        public bool bleakRamps = false;
+
         [Name("Bleak Inlet Rope")]
         [Description("Enable rope near the lookout")]
         public bool bleakRope = false;

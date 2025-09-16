@@ -133,7 +133,7 @@ namespace Shortcuts
             }
 
 
-            if (sceneName == "LongRailTransitionZone" || sceneName == "BlackrockTransitionZone" || sceneName == "CanneryRegion")
+            if (sceneName == "LongRailTransitionZone" || sceneName == "BlackrockTransitionZone" || sceneName == "CanneryRegion" || sceneName == "DamTransitionZone_SANDBOX" || sceneName == "DamRiverTransitionZoneB")
             {
                 Clones.ChangeObjects();
             }
