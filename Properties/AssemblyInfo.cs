@@ -32,7 +32,7 @@ using MelonLoader;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.8.2")]
-[assembly: AssemblyFileVersion("1.8.2")]
-[assembly: MelonInfo(typeof(Shortcuts.Main), "Shortcuts", "1.8.2", "moosemeat817")]
+[assembly: AssemblyVersion("1.9.0")]
+[assembly: AssemblyFileVersion("1.9.0")]
+[assembly: MelonInfo(typeof(Shortcuts.Main), "Shortcuts", "1.9.0", "moosemeat817")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
