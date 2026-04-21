@@ -22,7 +22,7 @@ namespace Shortcuts
 
             if (sceneName == "CanneryRegion" && Settings.options.bleakRope)
             {
-                GameObject.Find("Art/Rocks/INTERACTIVE_RopeCliff_08_100m/Rope_100m").gameObject.SetActive(true);
+                MelonCoroutines.Start(EnableRopeNextFrame());
             }
 
             if (sceneName == "CanneryRegion" && Settings.options.bleakDock)
@@ -74,6 +74,22 @@ namespace Shortcuts
             }
         }
 
+
+
+        private IEnumerator EnableRopeNextFrame()
+        {
+            yield return null;
+            GameObject rope = GameObject.Find("Art/Rocks/INTERACTIVE_RopeCliff_08_100m/Rope_100m");
+            if (rope != null)
+                rope.SetActive(true);
+            else
+                MelonLogger.Warning("[Shortcuts] Rope not found in CanneryRegion");
+        }
+
+
+
+
+
         public override void OnSceneWasLoaded(int buildIndex, string sceneName)
         {
             if (sceneName == "DamRiverTransitionZoneB" && Settings.options.enableDamDoor)
@@ -104,6 +120,8 @@ namespace Shortcuts
             {
                 Clones.ChangeObjects();
             }
+
+            
         }
     }
 }
