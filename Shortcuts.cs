@@ -20,6 +20,11 @@ namespace Shortcuts
                 GameObject.Find("/Art/Climbing/DisabledRopes/Climb50m_topcreek/INTERACTIVE_RopeCliff_50m/Rope_50m").gameObject.SetActive(true);
             }
 
+            if (sceneName == "RavineTransitionZone" && Settings.options.ravineRope)
+            {
+                GameObject.Find("Art/RopeClimb_no rope/INTERACTIVE_RopeCliff_100m/Rope_100m").gameObject.SetActive(true);
+            }
+
             if (sceneName == "CanneryRegion" && Settings.options.bleakRope)
             {
                 MelonCoroutines.Start(EnableRopeNextFrame());
